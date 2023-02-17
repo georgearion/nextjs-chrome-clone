@@ -20,6 +20,8 @@ const CatCard: React.FC<ICatCard> = ({ tag, title, body, author, time }) => {
             className={styles.card__image}
             width="600"
             height="400"
+            placeholder="blur"
+            blurDataURL={'/time-cat.jpg'}
           />
         </div>
         <div className={styles.card__body}>
