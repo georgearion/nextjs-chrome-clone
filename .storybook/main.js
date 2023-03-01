@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
   /** Pick up any .stories files inside our Components (or other) directories */
   stories: ['../**/*.stories.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
@@ -9,6 +10,7 @@ module.exports = {
     '@storybook/addon-interactions',
     // required when using css modules
     'storybook-css-modules-preset',
+    'storybook-addon-next-router',
     {
       /**
        * Fix Storybook issue with PostCSS@8
@@ -25,5 +27,13 @@ module.exports = {
   framework: '@storybook/react',
   core: {
     builder: '@storybook/builder-webpack5',
+  },
+  webpackFinal: async (config, { configType }) => {
+    config.resolve.modules = [path.resolve(__dirname, '..'), 'node_modules'];
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, '../'),
+    };
+    return config;
   },
 };

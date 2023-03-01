@@ -1,8 +1,6 @@
 import { ISearch } from './Search';
 
-const base: ISearch = {
-  searchInputPlaceholder: 'Search Google or type URL',
-};
+const base: ISearch = {};
 
 export const mockSearchProps = {
   base,
