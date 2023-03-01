@@ -18,7 +18,8 @@ export const getServerSideProps: GetServerSideProps<IResults> = async ({
 
   if (searchTerm && searchTerm.length > 0) {
     // 2
-    const response = await fetch(`http://localhost:3000/api/search`, {
+    const baseurl = process.env.BASEURL;
+    const response = await fetch(`${baseurl}/api/search`, {
       body: JSON.stringify({ searchTerm }),
       headers: {
         'Content-Type': 'application/json',

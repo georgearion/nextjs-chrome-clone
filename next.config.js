@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     domains: ['i.pravatar.cc'],
   },
+  env: {
+    BASEURL: process.env.BASEURL,
+  },
 };
 
 module.exports = nextConfig;

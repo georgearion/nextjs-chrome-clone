@@ -1,7 +1,7 @@
 {
   "name": "nextjs-starter-template",
   "author": "George ARION",
-  "description": "A starter template for creating a production-ready fullstack Next.js application with Storybook",
+  "description": "A production-ready full stack Chrome Clone application built with with Next.js, TypeScript, Storybook and Tailwind",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
