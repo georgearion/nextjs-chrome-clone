@@ -19,7 +19,7 @@ const Search: React.FC<ISearch> = () => {
       }}
     >
       {/* Search input */}
-      <div className="relative mt-1 rounded-full  shadow-sm">
+      <div className="relative mt-1 rounded-full shadow-md">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
           <svg
             className="h-5 w-5"
@@ -40,7 +40,7 @@ const Search: React.FC<ISearch> = () => {
           type="text"
           name="search"
           id="search"
-          className="block xs:w-80 sm:w-96 rounded-full border-2 border-gray-300 pl-11 pr-4 pt-4 pb-4 focus:border-indigo-500 focus:ring-indigo-500 h-12"
+          className="block xs:w-80 sm:w-128 rounded-full border border-slate-200 pl-11 pr-4 pt-4 pb-4 focus:border-slate-200 h-12"
           placeholder="Search Google or type URL"
           value={searchTerm}
           onChange={(e) => SetSearchTerm(e.target.value)}
@@ -48,10 +48,16 @@ const Search: React.FC<ISearch> = () => {
       </div>
       {/* Buttons */}
       <div className="space-x-3">
-        <button type="submit" className="btn-primary">
+        <button
+          type="submit"
+          className="btn-primary border border-white hover:border-slate-200"
+        >
           Google Search
         </button>
-        <button type="submit" className="btn-primary">
+        <button
+          type="submit"
+          className="btn-primary border border-white hover:border-slate-200"
+        >
           I&apos;m Feeling Lucky
         </button>
       </div>
