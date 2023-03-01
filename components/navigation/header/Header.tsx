@@ -1,3 +1,4 @@
+import AuthButton from '@/components/buttons/auth-button/AuthButton';
 import Link from 'next/link';
 
 export interface IHeader extends React.ComponentPropsWithoutRef<'header'> {}
@@ -23,9 +24,7 @@ const Header: React.FC<IHeader> = ({ className, ...headerProps }) => {
         <Link href="/" className="hover:underline hidden sm:inline">
           Images
         </Link>
-        <button className="border-1 p-2 px-4 sm:px-6 bg-blue-500 rounded text-white">
-          Sign In
-        </button>
+        <AuthButton />
       </div>
     </header>
   );
