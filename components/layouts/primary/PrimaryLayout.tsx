@@ -1,8 +1,10 @@
 import Footer from '@/components/navigation/footer/Footer';
 import Header from '@/components/navigation/header/Header';
 import Head from 'next/head';
+import { ReactNode } from 'react';
 
-export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
+export interface IPrimaryLayout {
+  children: ReactNode;
   justify?: 'items-center' | 'items-start';
 }
 
