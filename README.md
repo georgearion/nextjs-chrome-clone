@@ -2,13 +2,16 @@
 
 ## Google Chrome Full Stack Application
 
-- Framework: [Next.js v13.1](https://nextjs.org/)
+This [repo](https://github.com/georgearion/nextjs-chrome-clone) is meant to serve as a starter template pre-configured with all the stuff needed to create a base setup from which to build your app on top off!
+
 - [TypeScript v4.9.5](https://www.typescriptlang.org/)
 - [React v18.2.0](https://reactjs.org/)
-- State Management & Authentication: [ReactContext](https://reactjs.org/docs/context.html)
-- Database: [lib/search/database.json](https://github.com/georgearion/nextjs-chrome-clone/blob/main/lib/search/database.json)
+- Prettier, eslint, git hooks and commitlint ([Husky](https://typicode.github.io/husky/#/))
+- Framework: [Next.js v13.1](https://nextjs.org/)
+- State Management: [ReactContext](https://reactjs.org/docs/context.html)
 - Frontend Workshop: [Storybook v6.5](https://storybook.js.org/)
 - Styling: [Tailwind CSS](https://tailwindcss.com/)
+- Database: [lib/search/database.json](https://github.com/georgearion/nextjs-chrome-clone/blob/main/lib/search/database.json)
 - Deployment: [Vercel](https://vercel.com/)
 
 DEMO
@@ -40,7 +43,5 @@ yarn dev # start Development http://localhost:3000
 Create a `.env` file similar to [`.env.development.local.example`](https://github.com/georgearion/nextjs-chrome-clone/blob/main/.env.development.local.example).
 
 ## Cloning / Forking
-
-This [repo](https://github.com/georgearion/nextjs-chrome-clone) is meant to serve as a starter template pre-configured with all the stuff needed to create a base setup from which to build your app on top off!
 
 Please review the [license](https://github.com/georgearion/nextjs-chrome-clone/blob/main/LICENSE.txt).

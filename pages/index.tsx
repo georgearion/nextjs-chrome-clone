@@ -18,6 +18,7 @@ const Home: NextPageWithLayout = () => {
         height={92}
         placeholder="blur"
         blurDataURL={'/Google.png'}
+        priority
       />
       <Search />
       <p>
